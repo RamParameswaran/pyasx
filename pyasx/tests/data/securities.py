@@ -86,14 +86,14 @@ class SecuritiesTest(unittest.TestCase):
             "deprecated_number_of_shares": 25,
             "suspended": False,
             "status": [
-              "CD"
+                "CD"
             ],
             "indices": [
                 {
-                  "index_code": "XJO",
-                  "name_full": "S&P/ASX 200",
-                  "name_short": "S&P/ASX200",
-                  "name_abrev": "S&P/ASX 200"
+                    "index_code": "XJO",
+                    "name_full": "S&P/ASX 200",
+                    "name_short": "S&P/ASX200",
+                    "name_abrev": "S&P/ASX 200"
                 }
             ]
         }
@@ -207,6 +207,6 @@ class SecuritiesTest(unittest.TestCase):
         Simple check of pulling live data
         """
 
-        security = pyasx.data.securities.get_security_info('CBAPC')
+        security = pyasx.data.securities.get_security_info('CBAPD')
         self.assertTrue("ticker" in security)
         self.assertTrue(len(security))
